@@ -1,0 +1,49 @@
+.section-01 {
+  .section-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1024px;
+    max-width: 1280px;
+    margin: 0 auto;
+    background: url('assets/s01_img_cover_02.webp') no-repeat;
+    background-size: contain;
+    object-fit: cover;
+  }
+
+  .section-title {
+    margin-top: -100px;
+  }
+
+  .text-top,
+  .text-bottom {
+    display: block;
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 78px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(70%);
+    transition: animation 700ms ease-in-out;
+
+    &.text-up {
+      animation: textUp 700ms ease forwards;
+    }
+  }
+
+  .text-bottom {
+    position: relative;
+
+    &.text-up {
+      animation-delay: 500ms;
+    }
+  }
+
+  .badge {
+    position: absolute;
+    top: -15px;
+    right: -60px;
+    font-size: 15px;
+    font-style: italic;
+  }
+}
