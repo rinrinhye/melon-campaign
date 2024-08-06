@@ -1,5 +1,7 @@
 $green: #00cd3c;
 $black: #000;
+$gray: #7f7f7f;
+$white-gray: #e0e0e0;
 
 .sr-only {
   position: absolute;
@@ -12,4 +14,8 @@ $black: #000;
 
 .highlight {
   color: $green;
+}
+
+.tr-mask {
+  overflow: hidden;
 }
