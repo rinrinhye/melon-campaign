@@ -4,3 +4,8 @@
     transform: translateY(0);
   }
 }
+@keyframes progress-bar-fill {
+  100% {
+    width: 100%;
+  }
+}

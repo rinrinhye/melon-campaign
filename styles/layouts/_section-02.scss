@@ -1,0 +1,149 @@
+.section-02 {
+  .section-inner {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 1280px;
+    text-align: center;
+  }
+  /* 공통 */
+  .text {
+    display: block;
+    transform: translateY(100%);
+  }
+
+  .section-title {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 70px;
+
+    .text.text-up {
+      animation: textUp 250ms linear forwards;
+    }
+
+    .text-bottom.text-up {
+      animation-delay: 200ms;
+    }
+  }
+
+  .sub-text {
+    margin-top: 26px;
+    font-size: 28px;
+    line-height: 40px;
+    color: $gray;
+    opacity: 0;
+    transform: translateY(70%);
+
+    &.text-up {
+      animation: textUp 250ms linear forwards 400ms;
+    }
+  }
+
+  .visual-content {
+    margin-top: 80px;
+  }
+
+  .device-frame {
+    position: relative;
+  }
+
+  .device-frame-img {
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0) 480px,
+      rgba(255, 255, 255, 1) 568px
+    );
+  }
+
+  .device-screen {
+    position: absolute;
+    top: 26px;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 300px;
+    height: 640px;
+    overflow: hidden;
+    border-radius: 32px;
+    transform: translateX(-50%);
+  }
+
+  .screen {
+    width: 100%;
+    height: 520px;
+  }
+
+  .tabbar {
+    width: 100%;
+    height: 106px;
+  }
+
+  .progress-bar {
+    position: absolute;
+    bottom: 114px;
+    width: 100%;
+    height: 2px;
+    background-color: $white-gray;
+
+    .fill {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 20%;
+      height: 100%;
+      background: $green;
+      animation: progress-bar-fill 30s linear forwards;
+    }
+  }
+
+  .expended-screen-list {
+    position: absolute;
+    top: 86px;
+    left: 50%;
+    z-index: -1;
+    width: 300px;
+    transform: translateX(-50%);
+
+    &.fade-out {
+      li {
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      li:nth-child(1) {
+        transform: translate(-37%, 1px);
+      }
+
+      li:nth-child(2) {
+        transform: translate(37%, 1px);
+      }
+
+      li:nth-child(3) {
+        transform: translate(-67%, 10%);
+      }
+
+      li:nth-child(4) {
+        transform: translate(67%, 10%);
+      }
+    }
+
+    li {
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 1s, box-shadow 1s;
+
+      &:nth-child(3),
+      &:nth-child(4) {
+        z-index: -1;
+      }
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
