@@ -2,6 +2,8 @@ $green: #00cd3c;
 $black: #000;
 $gray: #7f7f7f;
 $white-gray: #e0e0e0;
+$white: #fff;
+$transparent: #ffffff00;
 
 .sr-only {
   position: absolute;
@@ -18,8 +20,4 @@ $white-gray: #e0e0e0;
 
 .tr-mask {
   overflow: hidden;
-}
-
-body {
-  overflow-x: hidden;
 }
