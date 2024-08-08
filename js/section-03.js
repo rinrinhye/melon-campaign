@@ -7,7 +7,6 @@ const observer = new IntersectionObserver(
         texts.forEach((text) => {
           text.classList.add('text-up');
         });
-        expendedScreenList.classList.add('fade-out');
       } else {
         texts.forEach((text) => {
           text.classList.remove('text-up');
