@@ -1,0 +1,151 @@
+.section-04 {
+  width: 100%;
+  height: 200vh;
+  min-height: 2048px;
+
+  .section-inner {
+    width: 100%;
+    height: 100vh;
+
+    &.sticky {
+      position: sticky;
+      top: 0;
+    }
+  }
+
+  .text {
+    display: block;
+  }
+
+  .text-top {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-50%);
+
+    .text {
+      color: $white;
+      transform: translateY(100%);
+
+      &.text-up {
+        animation: textUp 1s forwards;
+      }
+    }
+  }
+
+  .text-bottom {
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    z-index: 1;
+    overflow: hidden;
+    color: $white;
+
+    .text {
+      display: block;
+      transform: translateY(100%);
+
+      > span {
+        display: block;
+      }
+
+      &.text-up {
+        color: $black;
+        animation: textUp 1s forwards;
+        transition: color 1s;
+      }
+    }
+  }
+
+  .visual-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1024px;
+    overflow: hidden;
+
+    transition: all 1s;
+
+    &.is-active {
+      top: 22%;
+      left: 55%;
+      width: 337px;
+      height: 733px;
+      border-top-right-radius: 32px;
+      border-top-left-radius: 32px;
+    }
+
+    video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .device-frame {
+    position: absolute;
+    top: 20%;
+    left: 53%;
+    width: 432px;
+    height: 830px;
+    opacity: 0;
+    transition: opacity 1s;
+
+    &.is-active {
+      opacity: 1;
+    }
+
+    .device-frame-img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .device-screen {
+      position: absolute;
+      top: 26px;
+      left: 50%;
+      width: 337px;
+      height: 733px;
+      overflow: hidden;
+      border-radius: 32px;
+      transform: translateX(-50%);
+    }
+
+    .screen-img {
+      position: absolute;
+      top: 0;
+      display: none;
+      width: 100%;
+    }
+
+    .progress-bar {
+      position: absolute;
+      bottom: 119px;
+      width: 100%;
+      height: 2px;
+      background: $green;
+    }
+
+    .device-tabbar-img {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}

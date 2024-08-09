@@ -7,31 +7,20 @@
     height: 1280px;
     text-align: center;
   }
-  /* 공통 */
+
   .text {
-    display: block;
     transform: translateY(100%);
   }
 
-  .section-title {
-    font-size: 52px;
-    font-weight: 800;
-    line-height: 70px;
+  .text.text-up {
+    animation: textUp 250ms linear forwards;
+  }
 
-    .text.text-up {
-      animation: textUp 250ms linear forwards;
-    }
-
-    .text-bottom.text-up {
-      animation-delay: 200ms;
-    }
+  .text-bottom.text-up {
+    animation-delay: 200ms;
   }
 
   .sub-text {
-    margin-top: 26px;
-    font-size: 28px;
-    line-height: 40px;
-    color: $gray;
     opacity: 0;
     transform: translateY(70%);
 
@@ -74,7 +63,7 @@
     height: 520px;
   }
 
-  .tabbar {
+  .device-tabbar-img {
     width: 100%;
     height: 106px;
   }
@@ -105,7 +94,7 @@
     width: 300px;
     transform: translateX(-50%);
 
-    &.fade-out {
+    &.is-focused {
       li {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
       }

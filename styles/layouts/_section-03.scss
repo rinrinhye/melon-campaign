@@ -7,14 +7,10 @@
     gap: 80px;
   }
 
-  .section-title {
-    font-size: 52px;
-    font-weight: 800;
-    line-height: 70px;
+  .main-text {
     text-align: center;
 
     .text {
-      display: block;
       transform: translateY(100%);
 
       &.text-up {

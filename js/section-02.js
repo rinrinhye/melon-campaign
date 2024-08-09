@@ -10,12 +10,12 @@ let observer = new IntersectionObserver(
         texts.forEach((text) => {
           text.classList.add('text-up');
         });
-        expendedScreenList.classList.add('fade-out');
+        expendedScreenList.classList.add('is-focused');
       } else {
         texts.forEach((text) => {
           text.classList.remove('text-up');
         });
-        expendedScreenList.classList.remove('fade-out');
+        expendedScreenList.classList.remove('is-focused');
       }
     });
   },

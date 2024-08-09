@@ -21,3 +21,29 @@ $transparent: #ffffff00;
 .tr-mask {
   overflow: hidden;
 }
+
+.main-text:not(.title) {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 70px;
+}
+
+.title {
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 78px;
+  text-align: center;
+}
+
+.sub-text {
+  margin-top: 26px;
+  font-size: 28px;
+  line-height: 40px;
+  color: $gray;
+  text-align: center;
+}
+
+.text-top,
+.text-bottom {
+  display: block;
+}
