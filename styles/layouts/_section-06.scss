@@ -1,0 +1,19 @@
+.section-06 {
+  .section-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 768px;
+    text-align: center;
+  }
+
+  .main-text {
+    margin-top: 100px;
+    opacity: 0;
+    transition: opacity 1s;
+
+    &.opacity {
+      opacity: 1;
+    }
+  }
+}
