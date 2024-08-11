@@ -1,4 +1,18 @@
 .section-03 {
+  &.is-active {
+    .tr {
+      animation: up 250ms linear forwards;
+    }
+
+    .tr-02 {
+      animation-delay: 200ms;
+    }
+  }
+
+  .tr {
+    transform: translateY(100%);
+  }
+
   .section-inner {
     display: flex;
     flex-direction: column;
@@ -9,18 +23,6 @@
 
   .main-text {
     text-align: center;
-
-    .text {
-      transform: translateY(100%);
-
-      &.text-up {
-        animation: textUp 250ms linear forwards;
-      }
-
-      &.text-bottom.text-up {
-        animation-delay: 200ms;
-      }
-    }
   }
 
   .slide-top-wrapper,

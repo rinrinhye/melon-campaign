@@ -1,4 +1,33 @@
 .section-09 {
+  &.is-active {
+    .tr-01 {
+      animation: up 1s forwards;
+    }
+
+    .tr-02 {
+      animation: up 1s forwards;
+    }
+
+    .tr-03 {
+      animation: up 1s forwards;
+    }
+  }
+
+  .tr-01 {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+
+  .tr-02 {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  .tr-03 {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
   .section-inner {
     display: flex;
     align-items: center;
@@ -12,12 +41,6 @@
   .main-text {
     font-weight: 700;
     color: $white;
-    opacity: 0;
-    transform: translateY(50%);
-
-    &.up {
-      animation: textUp 1s forwards;
-    }
   }
 
   .store-wrap,
@@ -29,13 +52,7 @@
   }
 
   .store-wrap {
-    opacity: 0;
-    transform: translateY(100%);
     gap: 16px;
-
-    &.up {
-      animation: textUp 1s forwards;
-    }
 
     .store-link {
       display: block;
@@ -56,13 +73,7 @@
   }
 
   .link-wrap {
-    opacity: 0;
-    transform: translateY(100%);
     gap: 32px;
-
-    &.up {
-      animation: textUp 1s forwards;
-    }
 
     .sns-link,
     .share-link-button {

@@ -1,4 +1,15 @@
 .section-06 {
+  &.is-active {
+    .tr {
+      opacity: 1;
+    }
+  }
+
+  .tr {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
   .section-inner {
     display: flex;
     align-items: center;
@@ -9,11 +20,5 @@
 
   .main-text {
     margin-top: 100px;
-    opacity: 0;
-    transition: opacity 1s;
-
-    &.opacity {
-      opacity: 1;
-    }
   }
 }

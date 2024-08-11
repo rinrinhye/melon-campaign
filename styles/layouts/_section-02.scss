@@ -1,4 +1,28 @@
 .section-02 {
+  &.is-active {
+    .tr {
+      animation: up 250ms linear forwards;
+    }
+
+    .tr-02 {
+      animation-delay: 200ms;
+    }
+
+    .tr-03 {
+      animation-delay: 400ms;
+    }
+  }
+
+  .tr-01,
+  .tr-02 {
+    transform: translateY(100%);
+  }
+
+  .tr-03 {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+
   .section-inner {
     display: flex;
     align-items: center;
@@ -6,27 +30,6 @@
     justify-content: center;
     height: 1280px;
     text-align: center;
-  }
-
-  .text {
-    transform: translateY(100%);
-
-    &.text-up {
-      animation: textUp 250ms linear forwards;
-    }
-  }
-
-  .text-bottom.text-up {
-    animation-delay: 200ms;
-  }
-
-  .sub-text {
-    opacity: 0;
-    transform: translateY(70%);
-
-    &.text-up {
-      animation: textUp 250ms linear forwards 400ms;
-    }
   }
 
   .visual-content {

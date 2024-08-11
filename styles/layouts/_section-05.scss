@@ -1,4 +1,30 @@
 .section-05 {
+  &.is-active {
+    .tr {
+      opacity: 1;
+
+      li:nth-child(1),
+      li:nth-child(2),
+      li:nth-child(3),
+      li:nth-child(4),
+      li:nth-child(5),
+      li:nth-child(6) {
+        opacity: 1;
+        transform: scale(1) translate(0, 0);
+      }
+    }
+  }
+
+  .tr {
+    opacity: 0;
+    transition: opacity 2s;
+
+    li {
+      opacity: 0;
+      transition: opacity 2s, transform 2s;
+    }
+  }
+
   .section-inner {
     display: flex;
     align-items: center;
@@ -23,29 +49,11 @@
     background: url('../../assets/s05_bg_03.png') no-repeat;
     background-position: center;
     background-size: contain;
-    opacity: 0;
-    transition: opacity 2s;
-
-    &.is-focused {
-      opacity: 1;
-
-      li:nth-child(1),
-      li:nth-child(2),
-      li:nth-child(3),
-      li:nth-child(4),
-      li:nth-child(5),
-      li:nth-child(6) {
-        opacity: 1;
-        transform: scale(1) translate(0, 0);
-      }
-    }
 
     li {
       position: absolute;
       top: 50%;
       left: 50%;
-      opacity: 0;
-      transition: opacity 2s, transform 2s;
 
       img {
         width: 100%;
