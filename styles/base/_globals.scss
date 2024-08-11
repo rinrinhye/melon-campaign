@@ -32,7 +32,6 @@ $transparent: #ffffff00;
   font-size: 60px;
   font-weight: 800;
   line-height: 78px;
-  letter-spacing: 3px;
   text-align: center;
 }
 
@@ -52,4 +51,24 @@ $transparent: #ffffff00;
 .footer {
   height: 156px;
   background: $green;
+}
+
+.container {
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 114px;
+
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../../assets/head_img_bi.png') no-repeat;
+    background-size: contain;
+  }
 }
