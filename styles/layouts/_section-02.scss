@@ -10,10 +10,10 @@
 
   .text {
     transform: translateY(100%);
-  }
 
-  .text.text-up {
-    animation: textUp 250ms linear forwards;
+    &.text-up {
+      animation: textUp 250ms linear forwards;
+    }
   }
 
   .text-bottom.text-up {
@@ -33,7 +33,7 @@
     margin-top: 80px;
   }
 
-  .device-frame {
+  .device-content {
     position: relative;
   }
 

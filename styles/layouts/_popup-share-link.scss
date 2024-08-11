@@ -1,0 +1,76 @@
+.popup-share-link {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.5s;
+
+  &.is-active {
+    z-index: 100;
+    opacity: 1;
+  }
+
+  .share-link-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 448px;
+    height: 186px;
+    padding: 30px;
+    background: $white;
+    border-radius: 8px;
+
+    .share-link-box-title {
+      display: block;
+      width: 100%;
+      font-size: 28px;
+      font-weight: 800;
+      color: $black;
+    }
+
+    .share-link-box-content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 64px;
+      font-size: 18px;
+      line-height: 64px;
+      text-align: center;
+      cursor: pointer;
+      border: 1px solid $white-gray;
+      border-radius: 8px;
+    }
+
+    .link-url {
+      display: inline-block;
+      flex-grow: 1;
+    }
+
+    .copy-button {
+      width: 123px;
+      font-weight: 800;
+      cursor: pointer;
+      border-left: 1px solid $white-gray;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      background: url('../../assets/pop_btn_close.png') no-repeat;
+      background-size: contain;
+    }
+  }
+}

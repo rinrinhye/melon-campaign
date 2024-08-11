@@ -32,6 +32,7 @@ $transparent: #ffffff00;
   font-size: 60px;
   font-weight: 800;
   line-height: 78px;
+  letter-spacing: 3px;
   text-align: center;
 }
 
@@ -46,4 +47,9 @@ $transparent: #ffffff00;
 .text-top,
 .text-bottom {
   display: block;
+}
+
+.footer {
+  height: 156px;
+  background: $green;
 }

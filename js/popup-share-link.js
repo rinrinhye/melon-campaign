@@ -1,0 +1,26 @@
+const popupShareLink = document.querySelector('.popup-share-link');
+const closeButton = document.querySelector('.popup-share-link .close-button');
+const shareLinkButton = document.querySelector('.share-link-button');
+const linkUrl = 'http://melon.com/m6campaign';
+const copyButton = document.querySelector('.copy-button');
+console.log(linkUrl);
+
+const clipboard = new ClipboardJS('.copy-button');
+
+clipboard.on('success', function (e) {
+  alert('URL이 복사되었습니다.');
+});
+
+shareLinkButton.addEventListener('click', () => {
+  popupShareLink.classList.add('is-active');
+});
+
+closeButton.addEventListener('click', () => {
+  popupShareLink.classList.remove('is-active');
+});
+
+// copyButton.addEventListener('click', () => {
+//   navigator.clipboard.writeText(linkUrl).then(() => {
+//     alert('URL이 복사되었습니다.');
+//   });
+// });

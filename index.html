@@ -2,15 +2,29 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
     <title>멜론</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js"></script>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
   </head>
   <body>
     <div class="container">
@@ -19,166 +33,493 @@
           <span class="sr-only">멜론</span>
         </a>
       </h1>
-      <section class="section section-01">
-        <div class="section-inner">
-          <div class="text-wrap">
-            <div class="main-text title">
-              <span class="text text-top"
-                ><span class="highlight">나에게 </span>맞춰</span
-              >
-              <span class="text text-bottom">
-                새롭게, 가벼워진 Melon 6.0
-                <span class="badge highlight">Update</span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section-02">
-        <div class="section-inner">
-          <div class="text-wrap">
-            <div class="main-text">
-              <div class="tr-mask">
-                <span class="text text-top">내게 필요한 5개 탭으로</span>
-              </div>
-              <div class="tr-mask">
-                <span class="text text-bottom"
-                  ><span class="highlight">새로워진 멜론</span>을
-                  만나보세요.</span
+      <div class="section-contents">
+        <section class="section section-01">
+          <div class="section-inner">
+            <div class="text-wrap">
+              <div class="main-text title">
+                <span class="text text-top"
+                  ><span class="highlight">나에게 </span>맞춰</span
                 >
+                <span class="text text-bottom">
+                  새롭게, 가벼워진 Melon 6.0
+                  <span class="badge highlight">Update</span>
+                </span>
               </div>
             </div>
-            <p class="sub-text text">
-              취향 가득 첫 화면부터 한 눈에 보는 핫한 트렌드,<br />다양한
-              아티스트의 콘텐츠와 플레이리스트까지.
-            </p>
           </div>
-
-          <div class="visual-content">
-            <div class="device-frame">
-              <img
-                class="device-frame-img"
-                src="assets/s02_img_device_frame.png"
-                alt=""
-              />
-              <div class="device-screen">
-                <img
-                  class="screen-img"
-                  src="./assets/s02_img_src_tab01.png"
-                  alt=""
-                />
-                <div class="progress-bar">
-                  <div class="fill"></div>
+        </section>
+        <section class="section section-02">
+          <div class="section-inner">
+            <div class="text-wrap">
+              <div class="main-text">
+                <div class="tr-mask">
+                  <span class="text text-top">내게 필요한 5개 탭으로</span>
                 </div>
+                <div class="tr-mask">
+                  <span class="text text-bottom"
+                    ><span class="highlight">새로워진 멜론</span>을
+                    만나보세요.</span
+                  >
+                </div>
+              </div>
+              <p class="sub-text text">
+                취향 가득 첫 화면부터 한 눈에 보는 핫한 트렌드,<br />다양한
+                아티스트의 콘텐츠와 플레이리스트까지.
+              </p>
+            </div>
+
+            <div class="visual-content">
+              <div class="device-content">
                 <img
-                  class="device-tabbar-img"
-                  src="./assets/s02_img_src_tabbar_tab01.png"
+                  class="device-frame-img"
+                  src="assets/s02_img_device_frame.png"
                   alt=""
                 />
+                <div class="device-screen">
+                  <img
+                    class="screen-img"
+                    src="./assets/s02_img_src_tab01.png"
+                    alt=""
+                  />
+                  <div class="progress-bar">
+                    <div class="fill"></div>
+                  </div>
+                  <img
+                    class="device-tabbar-img"
+                    src="./assets/s02_img_src_tabbar_tab01.png"
+                    alt=""
+                  />
+                </div>
+                <ul class="expended-screen-list">
+                  <li>
+                    <img
+                      src="./assets/s02_img_src_tab02.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/s02_img_src_tab03.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/s02_img_src_tab04.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/s02_img_src_tab05.png"
+                      alt=""
+                    />
+                  </li>
+                </ul>
               </div>
-              <ul class="expended-screen-list">
+            </div>
+          </div>
+        </section>
+        <section class="section section-03">
+          <div class="section-inner">
+            <div class="text-wrap">
+              <div class="main-text">
+                <div class="tr-mask">
+                  <span class="text text-top">내가 좋아할 음악들이 가득한</span>
+                </div>
+                <div class="tr-mask">
+                  <span class="text text-bottom"
+                    >취향 중심의 <span class="highlight">새로운 홈.</span></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="visual-content">
+              <div class="slide-top-wrapper">
+                <ul class="slide-top">
+                  <li>
+                    <img
+                      src="assets/s03_img_cover01.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover02.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover03.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover04.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover05.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="cover">
+                    <img
+                      src="assets/s03_img_cover06.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover07.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover08.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover09.png"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-bottom-wrapper">
+                <ul class="slide-bottom">
+                  <li class="cover">
+                    <img
+                      src="assets/s03_img_cover11.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover12.png"
+                      alt=""
+                    />
+                  </li>
+                  <li class="cover">
+                    <img
+                      src="assets/s03_img_cover13.webp"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover14.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover15.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover16.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover17.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover18.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="assets/s03_img_cover19.png"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- section-04 -->
+        <section class="section section-05">
+          <div class="section-inner">
+            <div class="text-wrap">
+              <div class="main-text">
+                <span class="text-top">듣고, 보기 쉽게 모아뒀어요.</span>
+                <span class="text-bottom highlight">아티스트의 음악방송.</span>
+              </div>
+              <p class="sub-text">
+                오직 멜론에서만 들을 수 있는 라디오, 지금 인기있는<br />최신
+                비디오와 다양한 취향이 가득한 매거진까지
+              </p>
+            </div>
+            <div class="visual-content">
+              <ul class="img-list">
                 <li>
-                  <img src="./assets/s02_img_src_tab02.png" alt="" />
+                  <img
+                    src="./assets/s05_img_cover01.png"
+                    alt=""
+                  />
                 </li>
-                <li><img src="./assets/s02_img_src_tab03.png" alt="" /></li>
-                <li><img src="./assets/s02_img_src_tab04.png" alt="" /></li>
-                <li><img src="./assets/s02_img_src_tab05.png" alt="" /></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="section section-03">
-        <div class="section-inner">
-          <div class="text-wrap">
-            <div class="main-text">
-              <div class="tr-mask">
-                <span class="text text-top">내가 좋아할 음악들이 가득한</span>
-              </div>
-              <div class="tr-mask">
-                <span class="text text-bottom"
-                  >취향 중심의 <span class="highlight">새로운 홈.</span></span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="visual-content">
-            <div class="slide-top-wrapper">
-              <ul class="slide-top">
-                <li><img src="assets/s03_img_cover01.png" alt="" /></li>
-                <li><img src="assets/s03_img_cover02.png" alt="" /></li>
-                <li><img src="assets/s03_img_cover03.png" alt="" /></li>
-                <li><img src="assets/s03_img_cover04.png" alt="" /></li>
-                <li><img src="assets/s03_img_cover05.png" alt="" /></li>
-                <li class="cover">
-                  <img src="assets/s03_img_cover06.webp" alt="" />
-                </li>
-                <li><img src="assets/s03_img_cover07.png" alt="" /></li>
-                <li><img src="assets/s03_img_cover08.png" alt="" /></li>
-                <li><img src="assets/s03_img_cover09.png" alt="" /></li>
-              </ul>
-            </div>
-            <div class="slide-bottom-wrapper">
-              <ul class="slide-bottom">
-                <li class="cover">
-                  <img src="assets/s03_img_cover11.webp" alt="" />
-                </li>
-                <li><img src="assets/s03_img_cover12.png" alt="" /></li>
-                <li class="cover">
-                  <img src="assets/s03_img_cover13.webp" alt="" />
-                </li>
-                <li><img src="assets/s03_img_cover14.png" alt="" /></li>
-                <li><img src="assets/s03_img_cover15.png" alt="" /></li>
-                <li><img src="assets/s03_img_cover16.png" alt="" /></li>
-                <li><img src="assets/s03_img_cover17.png" alt="" /></li>
                 <li>
-                  <img src="assets/s03_img_cover18.png" alt="" />
+                  <img
+                    src="./assets/s05_img_cover02.png"
+                    alt=""
+                  />
                 </li>
-                <li><img src="assets/s03_img_cover19.png" alt="" /></li>
+                <li>
+                  <img
+                    src="./assets/s05_img_cover03.png"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/s05_img_cover04.png"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/s05_img_cover05.png"
+                    alt=""
+                  />
+                </li>
+                <li>
+                  <img
+                    src="./assets/s05_img_cover06.png"
+                    alt=""
+                  />
+                </li>
               </ul>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- section-04 -->
-      <section class="section section-05">
-        <div class="section-inner">
-          <div class="text-wrap">
-            <div class="main-text">
-              <span class="text-top">듣고, 보기 쉽게 모아뒀어요.</span>
-              <span class="text-bottom highlight">아티스트의 음악방송.</span>
+        </section>
+        <section class="section-06">
+          <div class="section-inner">
+            <div class="main-text text">
+              혹시 <span class="highlight">이거</span> 찾았어요?
             </div>
-            <p class="sub-text">
-              오직 멜론에서만 들을 수 있는 라디오, 지금 인기있는<br />최신
-              비디오와 다양한 취향이 가득한 매거진까지
-            </p>
           </div>
-          <div class="visual-content">
-            <ul class="img-list">
-              <li><img src="./assets/s05_img_cover01.png" alt="" /></li>
-              <li><img src="./assets/s05_img_cover02.png" alt="" /></li>
-              <li><img src="./assets/s05_img_cover03.png" alt="" /></li>
-              <li><img src="./assets/s05_img_cover04.png" alt="" /></li>
-              <li><img src="./assets/s05_img_cover05.png" alt="" /></li>
-              <li><img src="./assets/s05_img_cover06.png" alt="" /></li>
-            </ul>
+        </section>
+        <section class="section section-07">
+          <div class="section-inner">
+            <div class="text-wrap">
+              <div class="main-text text">
+                나를 위한 추천 태그로
+                <br />
+                손쉽게 내게 맞춘<br />
+                <span class="highlight">새로운 탐색.</span>
+              </div>
+            </div>
+            <div class="visual-content">
+              <div class="device-content">
+                <img
+                  class="device-frame-img"
+                  src="./assets/s07_img_device.png"
+                  alt=""
+                />
+                <ul class="tag-list">
+                  <li>
+                    <img
+                      src="./assets/s07_img_tag01.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/s07_img_tag02.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/s07_img_tag03.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/s07_img_tag04.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/s07_img_tag05.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/s07_img_tag06.png"
+                      alt=""
+                    />
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/s07_img_tag07.png"
+                      alt=""
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+        </section>
+        <section class="section section-08">
+          <div class="section-inner">
+            <div class="text-wrap">
+              <div class="main-text text">
+                최애곡들만 모아<br />
+                정리한
+                <span class="highlight"
+                  >나만의<br />
+                  음악서랍</span
+                >까지.
+              </div>
+            </div>
+            <div class="visual-content">
+              <div class="device-content">
+                <img
+                  class="device-frame-img"
+                  src="./assets/s08_img_device.png"
+                  alt=""
+                />
+                <img
+                  class="device-cell-img"
+                  src="./assets/s08_img_cell.png"
+                  alt=""
+                />
+                <ul class="count-list">
+                  <li class="count">418</li>
+                  <li>857</li>
+                  <li>257</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section-09">
+          <div class="section-inner">
+            <div class="main-text text">
+              나만을 위한 멜론의 새로운 변화.<br />
+              앞으로도 함께해요.
+            </div>
+            <div class="store-wrap">
+              <a
+                href=""
+                class="store-link link-google-store"
+              >
+                <span class="sr-only">구글스토어 바로가기</span></a
+              >
+              <a
+                href=""
+                class="store-link link-apple-store"
+              >
+                <span class="sr-only">애플스토어 바로가기</span></a
+              >
+            </div>
+            <div class="link-wrap">
+              <a
+                href=""
+                class="sns-link link-facebook"
+              >
+                <span class="sr-only">페이스북 공유하기</span></a
+              >
+              <a
+                href=""
+                class="sns-link link-twitter"
+                ><span class="sr-only">트위터 공유하기</span>
+              </a>
+              <button
+                href=""
+                class="share-link-button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <span class="sr-only">링크 복사하기</span>
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="popup-share-link">
+        <div class="share-link-box">
+          <div class="share-link-box-title">공유하기</div>
+          <div class="share-link-box-content">
+            <span class="link-url">melon.com/m6campaign</span>
+            <button
+              class="copy-button highlight"
+              data-clipboard-text="http://melon.com/m6campaign"
+            >
+              URL 복사
+            </button>
+          </div>
+          <button class="close-button"></button>
         </div>
-      </section>
-      <section class="section-06">
-        <div class="section-inner">
-          <div class="main-text text">
-            혹시 <span class="highlight">이거</span> 찾았어요?
-          </div>
-        </div>
-      </section>
+      </div>
+      <footer class="footer"></footer>
     </div>
-    <script type="module" src="js/section-01.js"></script>
-    <script type="module" src="js/section-02.js"></script>
-    <script type="module" src="js/section-03.js"></script>
-    <script type="module" src="js/section-04.js"></script>
-    <script type="module" src="js/section-05.js"></script>
-    <script type="module" src="js/section-06.js"></script>
-    <script type="module" src="js/slide.js"></script>
+    <script
+      type="module"
+      src="js/section-01.js"
+    ></script>
+    <script
+      type="module"
+      src="js/section-02.js"
+    ></script>
+    <script
+      type="module"
+      src="js/section-03.js"
+    ></script>
+    <script
+      type="module"
+      src="js/section-04.js"
+    ></script>
+    <script
+      type="module"
+      src="js/section-05.js"
+    ></script>
+    <script
+      type="module"
+      src="js/section-06.js"
+    ></script>
+    <script
+      type="module"
+      src="js/section-07.js"
+    ></script>
+    <script
+      type="module"
+      src="js/section-08.js"
+    ></script>
+    <script
+      type="module"
+      src="js/section-09.js"
+    ></script>
+    <script
+      type="module"
+      src="js/popup-share-link.js"
+    ></script>
+    <script
+      type="module"
+      src="js/slide.js"
+    ></script>
   </body>
 </html>
