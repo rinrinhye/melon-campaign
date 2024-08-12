@@ -162,6 +162,8 @@ button {
 
 .container {
   position: relative;
+  min-width: 1440px;
+  overflow-x: hidden;
 }
 
 .logo {
