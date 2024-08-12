@@ -1,18 +1,17 @@
 .section-01 {
+  .tr {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+
   &.is-active {
     .tr {
       animation: up 700ms ease forwards;
     }
 
     .tr-02 {
-      animation: up 700ms ease forwards;
       animation-delay: 500ms;
     }
-  }
-
-  .tr {
-    opacity: 0;
-    transform: translateY(70%);
   }
 
   .section-inner {

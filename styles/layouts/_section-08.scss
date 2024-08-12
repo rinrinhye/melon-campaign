@@ -1,31 +1,30 @@
 .section-08 {
-  &.is-active {
-    .tr-01 {
-      animation: up 1s forwards;
-    }
-
-    .tr-02 {
-      animation: up 1s forwards;
-
-      .device-cell-img {
-        opacity: 1;
-      }
-    }
-  }
-
-  .tr-01 {
+  .tr-01.main-text {
     opacity: 0;
     transform: translateY(40%);
   }
 
-  .tr-02 {
+  .tr-02.device-content {
     opacity: 0;
     transform: translateY(20%);
 
     .device-cell-img {
       opacity: 0;
-      transform: translate(-50%, -50%);
       transition: opacity 1s;
+    }
+  }
+
+  &.is-active {
+    .tr-01.main-text {
+      animation: up 1s forwards;
+    }
+
+    .device-content.tr-02 {
+      animation: up 1s forwards;
+
+      .device-cell-img {
+        opacity: 1;
+      }
     }
   }
 
@@ -57,6 +56,7 @@
     top: 50%;
     left: 50%;
     height: 332px;
+    transform: translate(-50%, -50%);
   }
 
   .count-list {

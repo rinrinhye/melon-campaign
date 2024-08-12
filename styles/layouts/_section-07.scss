@@ -1,23 +1,9 @@
 .section-07 {
-  &.is-active {
-    .tr-01 {
-      animation: up 1.5s forwards;
-    }
-
-    .tr-02 {
-      animation: up 1s forwards;
-
-      li {
-        transform: scale(1.8);
-      }
-    }
-  }
-
-  .tr-01 {
+  .tr-01.main-text {
     transform: translateY(100%);
   }
 
-  .tr-02 {
+  .tr-02.device-content {
     opacity: 0;
     transform: translateY(10%);
 
@@ -59,6 +45,20 @@
       &:nth-child(7) {
         transition-delay: 0.6s;
         transition-duration: 0.7s;
+      }
+    }
+  }
+
+  &.is-active {
+    .tr-01.main-text {
+      animation: up 1.5s forwards;
+    }
+
+    .tr-02.device-content {
+      animation: up 1s forwards;
+
+      li {
+        transform: scale(1.8);
       }
     }
   }

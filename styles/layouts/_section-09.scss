@@ -1,31 +1,31 @@
 .section-09 {
-  &.is-active {
-    .tr-01 {
-      animation: up 1s forwards;
-    }
-
-    .tr-02 {
-      animation: up 1s forwards;
-    }
-
-    .tr-03 {
-      animation: up 1s forwards;
-    }
-  }
-
-  .tr-01 {
+  .tr-01.main-text {
     opacity: 0;
     transform: translateY(50%);
   }
 
-  .tr-02 {
+  .tr-02.store-wrap {
     opacity: 0;
     transform: translateY(100%);
   }
 
-  .tr-03 {
+  .tr-03.link-wrap {
     opacity: 0;
     transform: translateY(100%);
+  }
+
+  &.is-active {
+    .tr-01.main-text {
+      animation: up 1s forwards;
+    }
+
+    .tr-02.store-wrap {
+      animation: up 1s forwards;
+    }
+
+    .tr-03.link-wrap {
+      animation: up 1s forwards;
+    }
   }
 
   .section-inner {

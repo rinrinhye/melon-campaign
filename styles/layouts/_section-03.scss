@@ -1,16 +1,12 @@
 .section-03 {
+  .tr {
+    transform: translateY(100%);
+  }
+
   &.is-active {
     .tr {
       animation: up 250ms linear forwards;
     }
-
-    .tr-02 {
-      animation-delay: 200ms;
-    }
-  }
-
-  .tr {
-    transform: translateY(100%);
   }
 
   .section-inner {
@@ -78,7 +74,7 @@
         }
 
         &::after {
-          background: url('../../assets/s03_img_cover_ovl.png') no-repeat;
+          background: url('assets/s03_img_cover_ovl.png') no-repeat;
           background-size: contain;
           content: '';
         }

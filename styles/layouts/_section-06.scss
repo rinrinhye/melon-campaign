@@ -1,13 +1,13 @@
 .section-06 {
-  &.is-active {
-    .tr {
-      opacity: 1;
-    }
+  .tr.main-text {
+    opacity: 0;
+    transition: opacity 2s;
   }
 
-  .tr {
-    opacity: 0;
-    transition: opacity 1s;
+  &.is-active {
+    .tr.main-text {
+      opacity: 1;
+    }
   }
 
   .section-inner {
