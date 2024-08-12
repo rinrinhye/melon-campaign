@@ -1,10 +1,14 @@
+@import './contstants/colors';
+
 @import './base/reset';
 @import './base/globals';
+@import './base/global-styles';
 @import './base/animations';
 
 @import './layouts/section-01';
 @import './layouts/section-02';
 @import './layouts/section-03';
+@import './layouts/section-04';
 @import './layouts/section-05';
 @import './layouts/section-06';
 @import './layouts/section-07';
