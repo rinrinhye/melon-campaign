@@ -163,7 +163,6 @@ button {
 .container {
   position: relative;
   min-width: 1440px;
-  overflow-x: hidden;
 }
 
 .logo {
@@ -1036,6 +1035,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
   transition: all 0.5s;
