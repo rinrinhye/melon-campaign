@@ -5,9 +5,9 @@ const linkUrl = 'http://melon.com/m6campaign';
 const copyButton = document.querySelector('.copy-button');
 console.log(linkUrl);
 
-const clipboard = new ClipboardJS('.copy-button');
+const clipboard = new ClipboardJS(copyButton);
 
-clipboard.on('success', function (e) {
+clipboard.on('success', function () {
   alert('URL이 복사되었습니다.');
 });
 
@@ -19,6 +19,7 @@ closeButton.addEventListener('click', () => {
   popupShareLink.classList.remove('is-active');
 });
 
+/* navigator 활용 방법 */
 // copyButton.addEventListener('click', () => {
 //   navigator.clipboard.writeText(linkUrl).then(() => {
 //     alert('URL이 복사되었습니다.');
