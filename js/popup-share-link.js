@@ -3,7 +3,6 @@ const closeButton = document.querySelector('.popup-share-link .close-button');
 const shareLinkButton = document.querySelector('.share-link-button');
 const linkUrl = 'http://melon.com/m6campaign';
 const copyButton = document.querySelector('.copy-button');
-console.log(linkUrl);
 
 const clipboard = new ClipboardJS(copyButton);
 
