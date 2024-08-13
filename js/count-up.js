@@ -1,20 +1,21 @@
 const countLi = document.querySelector('.count-list .count');
 
-let defaultNumber = 418;
+const DEFAULTNUMBER = 418;
+let count = DEFAULTNUMBER;
 const targetNumber = 1215;
 
 let lastScrollY = 0;
 
 function countUp() {
-  defaultNumber += 8;
+  count += 8;
 
-  if (defaultNumber < 1215) {
-    countLi.innerHTML = defaultNumber.toLocaleString();
+  if (count < targetNumber) {
+    countLi.innerHTML = count.toLocaleString();
   }
 
-  if (defaultNumber > 1215) {
+  if (count > targetNumber) {
     countLi.innerHTML = targetNumber.toLocaleString();
-    defaultNumber = 418;
+    count = DEFAULTNUMBER;
     return cancelAnimationFrame(countUp);
   }
 

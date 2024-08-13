@@ -21,7 +21,7 @@ const observer = new IntersectionObserver(
         }
 
         if (section.target.classList.contains('section-08')) {
-          countLi.innerHTML = 418;
+          countLi.innerHTML = DEFAULTNUMBER;
         }
       }
     });
