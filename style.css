@@ -302,27 +302,25 @@ button {
 .section-02.is-active .tr-03 {
   animation-delay: 400ms;
 }
-.section-02.is-active .device-content.tr-04 .expended-screen-list li {
+.section-02.is-active .tr-04.device-content .expended-screen-list li {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.section-02.is-active .device-content.tr-04 .expended-screen-list li:nth-child(1) {
+.section-02.is-active .tr-04.device-content .expended-screen-list li:nth-child(1) {
   transform: translate(-37%, 1px);
 }
-.section-02.is-active .device-content.tr-04 .expended-screen-list li:nth-child(2) {
+.section-02.is-active .tr-04.device-content .expended-screen-list li:nth-child(2) {
   transform: translate(37%, 1px);
 }
-.section-02.is-active .device-content.tr-04 .expended-screen-list li:nth-child(3) {
+.section-02.is-active .tr-04.device-content .expended-screen-list li:nth-child(3) {
   transform: translate(-67%, 10%);
 }
-.section-02.is-active .device-content.tr-04 .expended-screen-list li:nth-child(4) {
+.section-02.is-active .tr-04.device-content .expended-screen-list li:nth-child(4) {
   transform: translate(67%, 10%);
 }
 .section-02.is-active .progress-bar-fill {
   position: absolute;
   top: 0;
   left: 0;
-  width: 20%;
-  height: 100%;
   background: #00cd3c;
   animation: progress-bar-fill 30s linear forwards;
 }
@@ -370,6 +368,11 @@ button {
   width: 100%;
   height: 2px;
   background-color: #e0e0e0;
+}
+.section-02 .progress-bar-fill {
+  width: 20%;
+  height: 100%;
+  background: #00cd3c;
 }
 .section-02 .expended-screen-list {
   position: absolute;
@@ -481,8 +484,6 @@ button {
 
 .section-04 {
   width: 100%;
-  height: 200vh;
-  min-height: 2048px;
 }
 .section-04 .tr-01,
 .section-04 .tr-02 {

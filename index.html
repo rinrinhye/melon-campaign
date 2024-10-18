@@ -65,27 +65,27 @@
     <link
       rel="apple-touch-icon"
       sizes="72x72"
-      href="/apple-touch-icon.png"
+      href="./apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/favicon-32x32.png"
+      href="./favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicon-16x16.png"
+      href="./favicon-16x16.png"
     />
     <link
       rel="manifest"
-      href="/site.webmanifest"
+      href="./site.webmanifest"
     />
     <link
       rel="mask-icon"
-      href="/safari-pinned-tab.svg"
+      href="./safari-pinned-tab.svg"
       color="#00cd3c"
     />
     <meta
@@ -110,6 +110,9 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <link
       rel="stylesheet"
       href="style.css"
@@ -396,7 +399,7 @@
                 />
                 <div class="device-screen">
                   <img
-                    class="screen-img"
+                    class="screen-img video-overlay"
                     src="./assets/s04_img_ovl00.png"
                     alt=""
                   />
@@ -648,10 +651,26 @@
       </div>
       <footer class="footer"></footer>
     </div>
-    <script src="js/count-up.js"></script>
-    <script src="js/toggle-class-section-04.js"></script>
-    <script src="js/sections.js"></script>
-    <script src="js/popup-share-link.js"></script>
-    <script src="js/slide.js"></script>
+    <script
+      type="module"
+      src="js/count-up.js"
+    ></script>
+    <script
+      type="module"
+      src="js/toggle-class-section-04.js"
+    ></script>
+    <!-- <script src="js/sections-observer.js"></script> -->
+    <script
+      type="module"
+      src="js/gsap.js"
+    ></script>
+    <script
+      type="module"
+      src="js/popup-share-link.js"
+    ></script>
+    <script
+      type="module"
+      src="js/slide.js"
+    ></script>
   </body>
 </html>
