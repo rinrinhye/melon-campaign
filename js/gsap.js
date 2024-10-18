@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 ScrollTrigger.defaults({
   start: 'top bottom',
   end: 'bottom 80%',
-  toggleActions: 'play reverse play reverse',
+  toggleActions: 'play none none reverse',
 });
 
 // count up
@@ -53,6 +53,12 @@ const section01 = gsap
 ScrollTrigger.create({
   trigger: '.section-01',
   animation: section01,
+  onLeave() {
+    gsap.to('.section-01 .scroll-img', { opacity: 0 });
+  },
+  onEnterBack() {
+    gsap.to('.section-01 .scroll-img', { opacity: 1 });
+  },
 });
 
 //section-02
@@ -191,7 +197,6 @@ ScrollTrigger.create({
   animation: section08,
   onLeave() {
     count = DEFAULT_NUMBER;
-    section08.time(0);
   },
   onLeaveBack() {
     count = DEFAULT_NUMBER;
@@ -211,31 +216,4 @@ ScrollTrigger.create({
   trigger: '.section-09',
   start: '40% bottom',
   animation: section09,
-  markers: true,
 });
-
-/* 
-
-문제
-
-1. count 숫자 timeline에 연결하니 안올라감
- // 이유 : countUp : duration : 10초 
-
- const countUp = gsap.to(count, {
-  duration: 10,
-  onStart() {
-    count.textContent = defaultNumber;
-  },
-  onProgress() {
-    defaultNumber += 8;
-    count.textContent = defaultNumber;
-
-    if (count.textContent > TARGET_NUMBER ) {
-      count.textContent = TARGET_NUMBER ;
-    }
-  },
-});
-
-
-
-*/
